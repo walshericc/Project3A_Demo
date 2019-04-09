@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(respawnDelay);
 
         Player.SetActive(true);
-        Player.transform.position = new Vector3(0, 0, 0);
+        Player.transform.position = Vector3.zero;
         Player.transform.rotation = Quaternion.identity;
         Player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         Player.GetComponent<Rigidbody2D>().angularVelocity = 0f;
